@@ -18,14 +18,20 @@
 
 <p> This application lists the current number of cases reported across the globe</p>
 
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <h2 th:text="${totalReportedCases}"></h2>
+    </nav>
+
     <div class="jumbotron">
-        <h1 class="display-4" th:text="${totalReportedCases}"></h1>
         <p class="lead">Total cases reported as of today</p>
     </div>
 <br>
 
-        <h1 th:text="${totalNewCases}"></h1>
-        <p><b> New cases reported since previous day </b></p>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <h2 th:text="${totalNewCases}"></h2>
+    </nav>
+
+        <p>New cases reported since previous day </p>
 
 </div>
 
